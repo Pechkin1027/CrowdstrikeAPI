@@ -7,12 +7,12 @@ import os
 import csv
 ##import pandas as pd
 
-proxies = {'http': 'http://bcp3.cumc.columbia.edu:8080','https':'http://bcp3.cumc.columbia.edu:8080'}
+proxies = {'http': 'http://XXXX.XXXX.columbia.edu:8080','https':'http://XXXX.XXXX.columbia.edu:8080'}
 
 authorization = FalconAuth.OAuth2(creds={
         'client_id': config.CROWDSTRIKE_USERNAME,
         'client_secret': config.CROWDSTRIKE_API_KEY,
-        'http': 'http://bcp3.cumc.columbia.edu:8080','https':'http://bcp3.cumc.columbia.edu:8080'
+        'http': 'http://XXXX.XXXX.columbia.edu:8080','https':'http://XXXX.XXXX.columbia.edu:8080'
     },
         proxy=proxies
 )
